@@ -14,8 +14,8 @@ jobs:
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: tag
-        path: tag
+        name: dist
+        path: dist
 
   UbuntuWinCross:
     name: Build for Windows (${{ matrix.configuration }}) on Ubuntu
