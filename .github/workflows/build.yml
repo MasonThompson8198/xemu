@@ -206,7 +206,7 @@ jobs:
         name: ${{ matrix.artifact_name }}
     - name: Get Package Info
       run: |
-        echo "BUILD_TAG=$(cat dist/tag/tag)" >> $GITHUB_ENV
+        echo "BUILD_TAG=$(cat dist/tag)" >> $GITHUB_ENV
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
